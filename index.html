@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1
+        let x = 13;
+        let y = 91;
+        console.log(x + y);
+
+        // 2
+        let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        l = list.length;
+        for(let i = 0; i < l; i++){
+            if (list[i] % 2 == 0){
+            console.log(`${list[i]}` + " är jämn tal!"); //this line wont run, it will go to the else statement automaticly so I put this line under the i++, line 28.
+        }
+        else{     
+            console.log(`${list[i]}` + " är udda tal!");
+        }
+            i++;
+            console.log(`${list[i]}` + " är jämn tal!"); 
+        }
+
+        // 3
+        for(let i = l; i > 0; i--){
+            console.log(i);
+        }
+
+    </script>
+
+</body>
+</html>
