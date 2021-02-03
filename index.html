@@ -8,29 +8,39 @@
 <body>
     
     <script>
-
         // 1
         let x = 13;
         let y = 91;
-        console.log(x + y);
+        console.log(`${x}` + " + " + `${y}` + " = " + `${x + y}`);
 
         // 2
         let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        l = list.length;
-        for(let i = 0; i < l; i++){
+        let list_length = list.length;
+        let evens = 0;
+        let odds = 0;
+        for(let i = 0; i < list_length;){
             if (list[i] % 2 == 0){
-            console.log(`${list[i]}` + " är jämn tal!"); //this line wont run, it will go to the else statement automaticly so I put this line under the i++, line 28.
-        }
-        else{     
-            console.log(`${list[i]}` + " är udda tal!");
-        }
+            evens++;
             i++;
-            console.log(`${list[i]}` + " är jämn tal!"); 
+        }
+            else{     
+                odds++;
+                i++;
+            }
+
         }
 
+        console.log("Total amount of odds " + `${odds}`);
+        console.log("Total amount of evens " + `${evens}`);
+
         // 3
-        for(let i = l; i > 0; i--){
-            console.log(i);
+        for(let i = list_length - 1; i >= 0; i--){
+            /* I did list_length - 1 because it will print extra line which says undefind and the reason is list_length is 10 which starts from 1 --> 10 
+            but list[i] starts from index 0 --> 9 and then it will go 11th index position which is undefind. theres only 10 index positions in the list. 
+            So list_length - 1 takes away that extra index position in the list. */
+            
+            console.log(list[i]);
+            
         }
 
     </script>
